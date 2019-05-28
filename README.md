@@ -2,30 +2,26 @@
 
 tnpm install -g @tencent/astel-cli
 
-## 查看模板列表
+## 选择模板列表
 ```
 astel list
 ```
 
-## 下载列表中的模板
+## 直接下载列表中的模板
 ```
 astel init <模板前缀> <模板名称>
 
 例：astel init A a20190424cos
 ```
-## 启动列表中的模板
+## 下载组件库到当前项目中
 ```
-astel serve <模板名称>
+astel insert <项目名称> <组件名称>,<组件名称>
 
-例：astel serve a20190424cos
-```
-
-
-## 将模块插入到模板中(目前只支持大厅活动模板)
-### 其中模板名称就是下载模板时所输入的名称
-```
-astel insert <模块名,模块名,模块名...> <模板名称>
-
-例：astel insert M-list a20190424cos
+例：astel insert A widget-A,widget-B
 ```
 
+## 更新组件库
+```
+astel update
+
+```
